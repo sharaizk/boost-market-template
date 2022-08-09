@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Hellix-Bold";
+  src: local("Hellix-Bold"),
+    url(./assets/fonts/Hellix-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Hellix-Light";
+  src: local("Hellix-Light"),
+    url(./assets/fonts/Hellix-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Hellix-Medium";
+  src: local("Hellix-Medium"),
+    url(./assets/fonts/Hellix-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Hellix-Regular";
+  src: local("Hellix-Regular"),
+    url(./assets/fonts/Hellix-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Hellix-SemiBold";
+  src: local("Hellix-SemiBold"),
+    url(./assets/fonts/Hellix-SemiBold.ttf) format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
 }
