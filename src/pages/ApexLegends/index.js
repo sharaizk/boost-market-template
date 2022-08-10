@@ -1,9 +1,7 @@
-import React from 'react'
-
+import React from "react";
+import HeroSection from "./HeroSection";
 const ApexLegends = () => {
-  return (
-    <div>ApexLegends</div>
-  )
-}
+  return <HeroSection />;
+};
 
-export default ApexLegends
+export default ApexLegends;

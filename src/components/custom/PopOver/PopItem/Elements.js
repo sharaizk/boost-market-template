@@ -4,7 +4,7 @@ export const PopItemContainer = styled.div`
   position: fixed;
   height: max-content;
   width: max-content;
-  background-color: ${(props) => props.theme.background2};
+  background-color: ${(props) => props.theme.white};
   padding: 1rem;
   border-radius: 10px;
   top: ${({ $top, $isOpen }) => `${$top + 10}px`};
