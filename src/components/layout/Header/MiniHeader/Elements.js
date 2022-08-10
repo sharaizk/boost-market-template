@@ -18,11 +18,9 @@ export const TopHeader = styled.div`
 `;
 
 export const Booster = styled.div`
-  /* flex: 0.1; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  
 `;
 
 export const BoosterImg = styled.img`
@@ -34,7 +32,7 @@ export const BoosterImg = styled.img`
 export const BoosterCount = styled.label`
   font-size: 0.8rem;
   line-height: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
   & span {
     color: ${(props) => props.theme.primary};
   }
@@ -42,10 +40,13 @@ export const BoosterCount = styled.label`
 
 export const LinksContainer = styled.div`
   height: 100%;
-  flex: 0.25;
+  flex: 0.2;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 1440px) {
+    flex: 0.225;
+  }
   @media screen and (max-width: 1024px) {
     flex: 0.3;
   }
@@ -66,5 +67,5 @@ export const StyledLink = styled(Link)`
   color: ${(props) => props.theme.secondary};
   text-decoration: none;
   white-space: nowrap;
-  font-weight: 500;
+  font-weight: 600;
 `;

@@ -19,7 +19,7 @@ export const SelectFlag = styled.img`
 `;
 
 export const SelectLanguage = styled.label`
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.8rem;
   line-height: 1.25rem;
   cursor: pointer;

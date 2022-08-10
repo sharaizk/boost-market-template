@@ -27,13 +27,13 @@ const HeroSection = () => {
           <Button>Boost Now!</Button>
           <IconsContainer>
             <FaPlaystation size={35} color="#51535A" />
-            <FaXbox size={30} color="#51535A"/>
-            <FaWindows size={33} color="#51535A"/>
-            <FaMobileAlt size={30} color="#51535A"/>
+            <FaXbox size={30} color="#51535A" />
+            <FaWindows size={33} color="#51535A" />
+            <FaMobileAlt size={30} color="#51535A" />
           </IconsContainer>
         </RightSection>
         <LeftSection>
-          <LifeLineImage src={lifeLine} alt="lifeline"/>
+          <LifeLineImage src={lifeLine} alt="lifeline" />
         </LeftSection>
       </BannerContainer>
     </HeroContainer>

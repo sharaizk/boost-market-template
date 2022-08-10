@@ -17,7 +17,7 @@ export const NavBarContainer = styled.nav`
 `;
 
 export const Brand = styled.div`
-  flex: 0.2;
+  flex: 0.17;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -26,9 +26,9 @@ export const Brand = styled.div`
   }
 `;
 export const Logo = styled.img`
-  width: 25%;
+  width: 22.5%;
   height: auto;
-  margin-right: 1.3vw;
+  margin-right: 1vw;
 
   @media screen and (max-width: 480px) {
     width: 50%;
@@ -40,13 +40,13 @@ export const BrandTitle = styled.h2`
   font-family: "Hellix-Bold" !important;
   text-transform: capitalize;
   letter-spacing: 2px;
-  font-size: 1rem;
-  line-height: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.2rem;
   text-align: justify;
   & span {
     color: ${(props) => props.theme.primary};
-    letter-spacing: 2.75px;
-    font-size: 1.2rem;
+    letter-spacing: 3.5px;
+    font-size: 1.6rem;
   }
 
   @media screen and (max-width: 1024px) {
@@ -81,11 +81,11 @@ export const NavSection = styled.div`
 
 export const LinksContainer = styled.ul`
   height: 100%;
-  flex: 0.485;
+  flex: 0.4;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1440px) {
     flex: 0.5;
   }
 `;
@@ -104,7 +104,7 @@ export const BtnContainer = styled.div`
 export const StyledLink = styled(Link)`
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: ${(props) => props.$color};
   font-weight: 600;
   display: flex;
