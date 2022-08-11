@@ -134,21 +134,21 @@ export const StyledLink = styled(Link)`
 export const BorderedLink = styled(Link)`
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: ${(props) => props.theme.secondary};
   font-weight: 600;
   border: 1px solid ${(props) => props.$color};
   border-radius: 1.2rem;
-  padding: 1% 5%;
+  padding: 1.5% 3%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  font-weight: 700;
   margin-right: 1rem;
-
   & svg {
     stroke-width: 3.5;
   }
-  @media screen and (max-width:1024px) {
+  @media screen and (max-width: 1024px) {
     margin-right: 0.5rem;
   }
   @media screen and (max-width: 768px) {

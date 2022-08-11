@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const DockContainer = styled.div`
-  height: 80%;
+  height: 85%;
   display: flex;
-  width: 50px;
+  width: 60px;
   justify-content: space-evenly;
   align-items: flex-start;
   border-radius: 0px 18px 18px 0px;
@@ -21,6 +21,10 @@ export const DockContainer = styled.div`
     transition: left 0.2s ease;
     z-index: 2;
   }
+  @media screen and (max-width: 480px) {
+    height: 80%;
+    width: 50px;
+  }
 `;
 
 export const IconContainer = styled.div`
@@ -33,23 +37,31 @@ export const IconContainer = styled.div`
   position: relative;
   &::before {
     content: "";
-    width: 4px;
-    height: 100%;
+    width: 6px;
+    height: 75%;
     background-color: ${(props) =>
       props.$border ? props.theme.primary : "transparent"};
     border-radius: 0 100% 100% 0;
     position: absolute;
-    top: 0;
+    top: 10%;
     left: 0;
     transition: background-color 0.2s ease;
   }
 `;
 
 export const IconImage = styled.img`
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   margin-bottom: 0vh;
   border-radius: 25%;
+  @media screen and (max-width: 480px) {
+    height: 30px;
+    width: 30px;
+  }
+  @media screen and (max-width: 380px) {
+    height: 25px;
+    width: 25px;
+  }
 `;
 
 export const ToggleContainer = styled.div`

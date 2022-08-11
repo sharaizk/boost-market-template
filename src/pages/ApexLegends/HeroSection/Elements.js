@@ -9,6 +9,7 @@ export const HeroContainer = styled.div`
   align-items: flex-start;
   height: calc(100vh - 30vh);
   position: relative;
+  margin-bottom: 3vh;
   @media screen and (max-width: 1024px) {
     padding: 1rem 7vw;
   }
@@ -152,10 +153,16 @@ export const IconsContainer = styled.div`
   }
 `;
 
-export const LifeLineImage=styled.img`
-width: 115%;
-height: auto;
-margin-top:40%;
-margin-right: 30%;
-`
+export const LifeLineImage = styled.img`
+  width: 128%;
+  height: auto;
+  margin-top: 47%;
+  margin-right: 40%;
+  @media screen and (max-width: 1440px) {
+    width: 115%;
+    height: auto;
+    margin-top: 40%;
+    margin-right: 30%;
+  }
+`;
 
