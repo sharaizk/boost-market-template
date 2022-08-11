@@ -3,19 +3,20 @@ import {
   HeroContainer,
   BannerContainer,
   RightSection,
-  LeftSection,
   Title,
   Description,
   Button,
   IconsContainer,
-  LifeLineImage
+  LeftSection,
+  LifeLineImage,
 } from "./Elements";
-import { flame1 } from "utils/assets.config";
+import { flame1, lifeLine } from "utils/assets.config";
 import { FaPlaystation, FaXbox, FaWindows, FaMobileAlt } from "react-icons/fa";
-import { lifeLine } from "utils/assets.config";
+import Dock from "components/custom/Dock";
 const HeroSection = () => {
   return (
     <HeroContainer>
+      <Dock />
       <BannerContainer $image={flame1}>
         <RightSection>
           <Title>Apex Legends Boost</Title>

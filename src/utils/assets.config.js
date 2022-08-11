@@ -7,6 +7,19 @@ import coin from "assets/Coins.png";
 import avatar from "assets/avatar.png";
 import flame1 from "assets/flames1.png";
 import lifeLine from "assets/lifeline.png";
+import apexIcon from "assets/apexIcon.png";
+import codWIcon from "assets/codWIcon.png";
+import csgoIcon from "assets/csgoIcon.png";
+import dotaIcon from "assets/dotaIcon.png";
+import fortniteIcon from "assets/fortniteIcon.png";
+import lolIcon from "assets/lolIcon.png";
+import nwIcon from "assets/nwIcon.png";
+import overwatchIcon from "assets/overwatchIcon.png";
+import rocketIcon from "assets/rocketIcon.png";
+import rs6Icon from "assets/rs6Icon.png";
+import valIcon from "assets/valIcon.png";
+import ttIcon from "assets/ttIcon.png";
+
 export {
   BoosterHoodie,
   UkFlag,
@@ -17,4 +30,16 @@ export {
   avatar,
   flame1,
   lifeLine,
+  apexIcon,
+  codWIcon,
+  csgoIcon,
+  dotaIcon,
+  fortniteIcon,
+  lolIcon,
+  nwIcon,
+  overwatchIcon,
+  rocketIcon,
+  rs6Icon,
+  valIcon,
+  ttIcon,
 };

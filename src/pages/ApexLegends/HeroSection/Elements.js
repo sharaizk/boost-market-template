@@ -13,7 +13,7 @@ export const HeroContainer = styled.div`
     padding: 1rem 7vw;
   }
   @media screen and (max-width: 768px) {
-    padding: 0.5rem 5vw;
+    padding: 0rem 5vw;
   }
 `;
 
@@ -77,7 +77,7 @@ export const RightSection = styled.div`
   @media screen and (max-width: 1440px) {
     padding: 0 3rem;
   }
-  @media screen and (max-width: 786px) {
+  @media screen and (max-width: 900px) {
     padding: 1rem 3rem;
   }
 `;
@@ -118,20 +118,20 @@ export const Description = styled.p`
 `;
 export const LeftSection = styled.div`
   height: 100%;
-  flex: 0.45;
+  flex: 0.4;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  @media screen and (max-width: 1024px) {
-    width: 100%;
+  @media screen and (max-width: 900px) {
+    display: none;
   }
 `;
 
 export const Button = styled.button`
   outline: none;
   border: none;
-  padding: 1.5vh 3vw;
+  padding: 1.5vh 5vw;
   border-radius: 12px;
   background-color: #d33b4b;
   cursor: pointer;
@@ -152,38 +152,10 @@ export const IconsContainer = styled.div`
   }
 `;
 
-export const LifeLineImage = styled.img`
-  width: 110%;
-  height: auto;
-  position: absolute;
-  top: 5%;
-  left: -20%;
-  @media screen and (max-width: 1440px) {
-    width: 110%;
-    top: 10%;
-  }
-  @media screen and (max-width: 1024px) {
-    width: 150%;
-    left: -60%;
-  }
-  @media screen and (max-width: 786px) {
-    width: 50%;
-    left: 40%;
-    top: -100%;
-  }
-  @media screen and (max-width: 480px) {
-    width: 60%;
-    left: 30%;
-    top: -50%;
-  }
-  @media screen and (max-width: 380px) {
-    width: 50%;
-    left: 45%;
-    top: -180%;
-  }
-  @media screen and (max-width: 360px) {
-    width: 50%;
-    left: 45%;
-    top: -70%;
-  }
-`;
+export const LifeLineImage=styled.img`
+width: 115%;
+height: auto;
+margin-top:40%;
+margin-right: 30%;
+`
+

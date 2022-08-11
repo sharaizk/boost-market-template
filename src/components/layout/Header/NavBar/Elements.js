@@ -9,7 +9,7 @@ export const NavBarContainer = styled.nav`
   align-items: center;
 
   @media screen and (max-width: 1024px) {
-    padding: 1rem 2vw 0 7vw;
+    padding: 1rem 1vw 0 6vw;
   }
   @media screen and (max-width: 768px) {
     padding: 0.5rem 5vw;
@@ -81,13 +81,17 @@ export const NavSection = styled.div`
 
 export const LinksContainer = styled.ul`
   height: 100%;
-  flex: 0.4;
+  flex: 0.55;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   @media screen and (max-width: 1440px) {
     flex: 0.5;
   }
+  @media screen and (max-width: 1024px) {
+    flex: 0.5;
+  }
+
 `;
 
 export const BtnContainer = styled.div`
@@ -97,7 +101,7 @@ export const BtnContainer = styled.div`
   justify-content: flex-end;
   align-items: center;
   @media screen and (max-width: 1024px) {
-    flex: 0.5;
+    flex: 0.4;
   }
 `;
 
@@ -110,8 +114,17 @@ export const StyledLink = styled(Link)`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-right: 2vw;
   & svg {
     stroke-width: 3.5;
+  }
+  @media screen and (max-width:1440px){
+    font-size: 0.8rem;
+  }
+  @media screen and (max-width: 1024px) {
+    flex: 0.5;
+    font-size: 0.6rem;
+    margin-right: -2rem;
   }
   @media screen and (max-width: 768px) {
     font-size: 0.8rem;
@@ -126,7 +139,7 @@ export const BorderedLink = styled(Link)`
   font-weight: 600;
   border: 1px solid ${(props) => props.$color};
   border-radius: 1.2rem;
-  padding: 6px 10px;
+  padding: 1% 5%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -135,6 +148,9 @@ export const BorderedLink = styled(Link)`
   & svg {
     stroke-width: 3.5;
   }
+  @media screen and (max-width:1024px) {
+    margin-right: 0.5rem;
+  }
   @media screen and (max-width: 768px) {
     font-size: 0.8rem;
   }
@@ -142,7 +158,7 @@ export const BorderedLink = styled(Link)`
 
 export const CoinImage = styled.img`
   margin-right: 0.3rem;
-  width: 35%;
+  /* width: 35%; */
   height: auto;
 `;
 export const IconWrapper = styled.div`
@@ -152,4 +168,7 @@ export const IconWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width:1024px) {
+    margin-right: 0.8rem;
+  }
 `;
