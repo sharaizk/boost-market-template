@@ -19,6 +19,12 @@ import rocketIcon from "assets/rocketIcon.png";
 import rs6Icon from "assets/rs6Icon.png";
 import valIcon from "assets/valIcon.png";
 import ttIcon from "assets/ttIcon.png";
+import winBoosting from "assets/cardImages/winBoosting.png";
+import rankBoosting from "assets/cardImages/rankBoosting.png";
+import killBoosting from "assets/cardImages/killBoosting.png";
+import arenaPlacement from "assets/cardImages/arenaPlacement.png";
+import arenaBoosting from "assets/cardImages/arenaBoosting.png";
+import achievementBadge from "assets/cardImages/achievementBadge.png";
 
 export {
   BoosterHoodie,
@@ -42,4 +48,10 @@ export {
   rs6Icon,
   valIcon,
   ttIcon,
+  winBoosting,
+  rankBoosting,
+  killBoosting,
+  arenaBoosting,
+  arenaPlacement,
+  achievementBadge,
 };

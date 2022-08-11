@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const NavBarContainer = styled.nav`
   height: 100px;
   width: 100%;
-  padding: 0.5rem 10.5vw 0 15vw;
+  padding: 0.5rem 9vw 0 15vw;
   display: flex;
   justify-content: flex-start;
   align-items: center;
