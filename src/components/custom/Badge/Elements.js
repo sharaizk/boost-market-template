@@ -12,8 +12,8 @@ export const BadgeContainer = styled.div`
 
 export const BadgeNoti = styled.sup`
   position: absolute;
-  top: 0;
-  right: 0;
+  top: ${(props) => props.$top};
+  right: ${(props) => props.$left};
   transform: translate(25%, -30%);
   transform-origin: 100% 0%;
   background-color: red;
@@ -21,12 +21,12 @@ export const BadgeNoti = styled.sup`
   min-width: 10px;
   height: 12px;
   padding: 1px 5px;
-  color: #fff;
+  color: ${(props) => (props.bg ? props.theme.secondary : "#fff")};
   font-weight: 400;
   font-size: 8px;
   line-height: 10px;
   white-space: nowrap;
   text-align: center;
-  background: ${props=>props.theme.primary};
+  background: ${(props) => props.bg || props.theme.primary};
   border-radius: 10px;
 `;

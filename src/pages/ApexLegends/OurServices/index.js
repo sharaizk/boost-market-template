@@ -4,6 +4,8 @@ import {
   WhatWeOffer,
   ServicesTag,
   CardsContainer,
+  SideIcon,
+  Icon,
 } from "./Elements";
 import ServicesCard from "components/custom/ServicesCard";
 import Carousel from "react-elastic-carousel";
@@ -13,13 +15,15 @@ import {
   killBoosting,
   rankBoosting,
   winBoosting,
+  userIcon,
 } from "utils/assets.config";
+import Badge from "components/custom/Badge";
 const OurServices = () => {
   const breakPoints = [
     { width: 1, itemsToShow: 1.15 },
     { width: 550, itemsToShow: 2.5 },
     { width: 850, itemsToShow: 3.5 },
-    { width: 1150, itemsToShow: 4.5 },
+    { width: 1150, itemsToShow: 5.45 },
     { width: 1440, itemsToShow: 5.75 },
     { width: 1750, itemsToShow: 5.75 },
   ];
@@ -71,6 +75,11 @@ const OurServices = () => {
 
   return (
     <ServicesContainer>
+      <SideIcon>
+        <Badge count={"3€"} top="-50%" left="0%" bg="#FFD8DA">
+          <Icon src={userIcon} />
+        </Badge>
+      </SideIcon>
       <WhatWeOffer>What We Offer</WhatWeOffer>
       <ServicesTag>
         Our Services<span>.</span>
@@ -78,10 +87,9 @@ const OurServices = () => {
       <CardsContainer>
         <Carousel
           breakPoints={breakPoints}
-          itemsToShow={5.75}
           renderArrow={() => <></>}
           renderPagination={() => <></>}
-          itemPadding={[0, 20, 0, 0]}
+          itemPadding={[10, 10, 15, 0]}
         >
           {services?.map((service) => {
             return (

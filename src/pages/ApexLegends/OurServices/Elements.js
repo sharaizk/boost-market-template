@@ -26,6 +26,9 @@ export const WhatWeOffer = styled.label`
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
+  @media screen and (max-width: 1440px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const ServicesTag = styled.h4`
@@ -37,6 +40,9 @@ export const ServicesTag = styled.h4`
     color: ${(props) => props.theme.primary};
   }
 
+  @media screen and (max-width: 1440px) {
+    font-size: 2.25rem;
+  }
   @media screen and (max-width: 380px) {
     font-size: 2.5rem;
   }
@@ -50,4 +56,20 @@ export const CardsContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   padding: 1rem 0;
+`;
+
+export const SideIcon = styled.div`
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+`;
+
+export const Icon = styled.img`
+  width: 70% !important;
+  height: auto;
 `;

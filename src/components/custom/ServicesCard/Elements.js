@@ -2,17 +2,27 @@ import styled from "styled-components";
 
 export const ServiceContainer = styled.div`
   height: max-content;
+  cursor: pointer !important;
   width: 100%;
   background-color: ${(props) =>
     props.isActive ? props.theme.secondary : props.theme.tertiary};
   border-radius: 48px;
-  padding: 5rem 0;
+  padding: 5rem 0rem;
   display: flex;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
   z-index: -1;
+  box-shadow: ${(props) =>
+    props.isActive ? `0px 8px 0px 0px ${props.theme.primary}` : "none"};
+  -webkit-box-shadow: ${(props) =>
+    props.isActive ? `0px 8px 0px 0px ${props.theme.primary}` : "none"};
+  -moz-box-shadow: ${(props) =>
+    props.isActive ? `0px 8px 0px 0px ${props.theme.primary}` : "none"};
+  @media screen and (max-width: 1440px) {
+    padding: 2.25rem 0rem;
+  }
 `;
 
 export const Title = styled.label`
@@ -22,6 +32,9 @@ export const Title = styled.label`
   font-weight: 600;
   text-align: center;
   margin-bottom: 25%;
+  @media screen and (max-width: 1440px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Image = styled.img`

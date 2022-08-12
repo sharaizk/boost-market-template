@@ -16,6 +16,11 @@ export const DockContainer = styled.div`
   bottom: 0;
   flex-direction: column;
 
+  @media screen and (max-width:1440px){
+    height: 80%;
+    width: 50px;
+  }
+
   @media screen and (max-width: 786px) {
     left: ${({ $sidebar }) => ($sidebar ? "0%" : "-50px")};
     transition: left 0.2s ease;
@@ -54,6 +59,10 @@ export const IconImage = styled.img`
   width: 40px;
   margin-bottom: 0vh;
   border-radius: 25%;
+  @media screen and (max-width: 1440px) {
+    height: 30px;
+    width: 30px;
+  }
   @media screen and (max-width: 480px) {
     height: 30px;
     width: 30px;

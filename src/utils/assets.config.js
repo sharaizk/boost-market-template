@@ -25,7 +25,7 @@ import killBoosting from "assets/cardImages/killBoosting.png";
 import arenaPlacement from "assets/cardImages/arenaPlacement.png";
 import arenaBoosting from "assets/cardImages/arenaBoosting.png";
 import achievementBadge from "assets/cardImages/achievementBadge.png";
-
+import userIcon from 'assets/userIcon.svg'
 export {
   BoosterHoodie,
   UkFlag,
@@ -54,4 +54,5 @@ export {
   arenaBoosting,
   arenaPlacement,
   achievementBadge,
+  userIcon
 };
