@@ -89,7 +89,7 @@ const OurServices = () => {
           breakPoints={breakPoints}
           renderArrow={() => <></>}
           renderPagination={() => <></>}
-          itemPadding={[10, 10, 15, 0]}
+          itemPadding={[15, 10, 15, 0]}
         >
           {services?.map((service) => {
             return (

@@ -60,12 +60,15 @@ export const CardsContainer = styled.div`
 
 export const SideIcon = styled.div`
   position: absolute;
-  top: 10%;
+  top: 30%;
   left: 0;
   width: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   /* background-color: red; */
 `;
 

@@ -49,7 +49,7 @@ export const PopularContainer = styled.div`
   font-weight: 600;
   padding: 5px 12px;
   border-radius: 20px;
-  top: -3%;
+  top: -0%;
   font-size: 0.85rem;
   z-index: 1000 !important;
 `;
