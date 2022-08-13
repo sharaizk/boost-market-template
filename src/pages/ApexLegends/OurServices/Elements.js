@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
-  height: 100%;
   width: 100%;
   padding: 1rem 0 0rem 15vw;
   display: flex;
@@ -16,6 +15,10 @@ export const ServicesContainer = styled.div`
   }
   @media screen and (max-width: 768px) {
     padding: 0rem 5vw;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 70vh;
   }
 `;
 

@@ -25,12 +25,18 @@ import killBoosting from "assets/cardImages/killBoosting.png";
 import arenaPlacement from "assets/cardImages/arenaPlacement.png";
 import arenaBoosting from "assets/cardImages/arenaBoosting.png";
 import achievementBadge from "assets/cardImages/achievementBadge.png";
-import userIcon from 'assets/userIcon.svg'
+import userIcon from "assets/userIcon.svg";
+import octaneImage from "assets/octane.png";
+import miniStar from "assets/miniStar.png";
+import trustPilot from "assets/trustPilot.png";
+
 export {
   BoosterHoodie,
   UkFlag,
   SpainFlag,
   FranceFlag,
+  miniStar,
+  trustPilot,
   brandLogo,
   coin,
   avatar,
@@ -54,5 +60,6 @@ export {
   arenaBoosting,
   arenaPlacement,
   achievementBadge,
-  userIcon
+  userIcon,
+  octaneImage,
 };
