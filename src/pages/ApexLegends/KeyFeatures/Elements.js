@@ -39,6 +39,7 @@ export const FeaturesContainer = styled.div`
     flex-direction: column;
     padding: 10% 7%;
   }
+
 `;
 
 export const LeftSection = styled.div`
@@ -81,7 +82,7 @@ export const FeaturesTag = styled.h4`
     font-size: 2.25rem;
   }
   @media screen and (max-width: 380px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 `;
 

@@ -44,7 +44,8 @@ import starw from "assets/booster-cards/starw.svg";
 import uk from "assets/flags/Uk.svg";
 import germany from "assets/flags/Germany.svg";
 import sweden from "assets/flags/Sweden.svg";
-
+import qoute from "assets/qoutesvg.svg";
+import reviewlogo from "assets/reviewlogo.png";
 export {
   BoosterHoodie,
   UkFlag,
@@ -92,4 +93,6 @@ export {
   uk,
   germany,
   sweden,
+  qoute,
+  reviewlogo,
 };

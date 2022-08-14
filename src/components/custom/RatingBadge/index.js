@@ -1,9 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-const RatingBadge = ({ star, rating, isActive = false }) => {
+import Star from "../Star";
+import { useTheme } from "styled-components";
+const RatingBadge = ({ rating, isActive = false, width }) => {
+  const theme = useTheme();
+  const fill=!isActive ? theme.primary : theme.white
   return (
-    <RatingContainer isActive={isActive}>
-      <Star src={star} alt="star" />
+    <RatingContainer $width={width} isActive={isActive}>
+      <Star fill={fill} amount={100} />
       <p>{rating}</p>
     </RatingContainer>
   );
@@ -17,7 +21,7 @@ const RatingContainer = styled.div`
   font-family: "Poppins";
   color: ${(props) => props.theme.white};
   font-style: normal;
-  width: 25%;
+  width: ${(props) => props.$width || "30%"};
   font-weight: 500;
   font-size: 1rem;
   line-height: 1rem;
@@ -29,6 +33,10 @@ const RatingContainer = styled.div`
   & p {
     margin-top: 1px;
   }
+
+  @media screen and (max-width:480px){
+    width: 30%;
+  }
 `;
 
-const Star = styled.img``;
+// const Star = styled.img``;
