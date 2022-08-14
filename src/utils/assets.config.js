@@ -29,6 +29,21 @@ import userIcon from "assets/userIcon.svg";
 import octaneImage from "assets/octane.png";
 import miniStar from "assets/miniStar.png";
 import trustPilot from "assets/trustPilot.png";
+import wraith from "assets/booster-cards/wraith.png";
+import caustic from "assets/booster-cards/caustic.png";
+import bloodhound from "assets/booster-cards/bloodhound.png";
+import crypto from "assets/booster-cards/crypto.png";
+import gibraltar from "assets/booster-cards/gibraltar.png";
+import killerqueen from "assets/booster-cards/killerqueen.png";
+import lancerx from "assets/booster-cards/lancerx.png";
+import lancerx2 from "assets/booster-cards/lancerx2.png";
+import petrosin from "assets/booster-cards/petrosin.png";
+import popinchuk from "assets/booster-cards/popinchuk.png";
+import star2 from "assets/booster-cards/star2.svg";
+import starw from "assets/booster-cards/starw.svg";
+import uk from "assets/flags/Uk.svg";
+import germany from "assets/flags/Germany.svg";
+import sweden from "assets/flags/Sweden.svg";
 
 export {
   BoosterHoodie,
@@ -62,4 +77,19 @@ export {
   achievementBadge,
   userIcon,
   octaneImage,
+  wraith,
+  caustic,
+  bloodhound,
+  crypto,
+  gibraltar,
+  killerqueen,
+  lancerx,
+  lancerx2,
+  petrosin,
+  popinchuk,
+  star2,
+  starw,
+  uk,
+  germany,
+  sweden,
 };

@@ -8,7 +8,7 @@ export const OctaneContainer = styled.div`
   align-items: flex-start;
   position: relative;
   height: 47vh;
-  margin-bottom: 10vh;
+  margin-bottom: 20vh;
   @media screen and (max-width: 1440px) {
     height: 50vh;
   }

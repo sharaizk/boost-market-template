@@ -3,6 +3,7 @@ import HeroSection from "./HeroSection";
 import OurServices from "./OurServices";
 import OctaneSection from "./OctaneSection";
 import KeyFeatures from "./KeyFeatures";
+import BoosterSection from "./BoosterSection";
 const ApexLegends = () => {
   return (
     <>
@@ -10,6 +11,7 @@ const ApexLegends = () => {
       <OurServices />
       <OctaneSection />
       <KeyFeatures />
+      <BoosterSection />
     </>
   );
 };
