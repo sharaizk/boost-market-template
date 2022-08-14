@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const ScreenContainer = styled.div`
   width: 100%;
-  padding: 1rem 15vw;
+  padding: 1rem 0 0rem 15vw;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
   position: relative;
-  height: 60vh;
-  margin-bottom: 10vh;
+  height: 100%;
   @media screen and (max-width: 1024px) {
     padding: 1rem 7vw;
   }
@@ -18,20 +17,27 @@ export const ScreenContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    height: 70vh;
   }
 `;
 
 export const TopSection = styled.div`
   flex: 0.2;
+  padding: 0rem 15vw 0 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 1024px) {
+    padding: 0;
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 export const BottomSection = styled.div`
-  flex: 0.7;
+  flex: 0.6;
+  margin-top: 10vh;
   width: 100%;
 `;
 
@@ -68,8 +74,8 @@ export const TitleTag = styled.h4`
   @media screen and (max-width: 1440px) {
     font-size: 2.25rem;
   }
-  @media screen and (max-width: 380px) {
-    font-size: 2.5rem;
+  @media screen and (max-width: 480px) {
+    font-size: 2rem;
   }
 `;
 

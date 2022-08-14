@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ServicesContainer = styled.div`
+export const ScreenContainer = styled.div`
   width: 100%;
   padding: 1rem 0 0rem 15vw;
   display: flex;
@@ -8,8 +8,8 @@ export const ServicesContainer = styled.div`
   align-items: flex-start;
   flex-direction: column;
   position: relative;
-  height: 60vh;
-  margin-bottom: 20vh;
+  height: 70vh;
+  margin-bottom: 10vh;
   @media screen and (max-width: 1024px) {
     padding: 1rem 7vw;
   }
@@ -22,7 +22,23 @@ export const ServicesContainer = styled.div`
   }
 `;
 
-export const WhatWeOffer = styled.label`
+export const TopSection = styled.div`
+  flex: 0.125;
+  padding: 0rem 15vw 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  @media screen and (max-width: 1024px) {
+    padding: 0;
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
+`;
+
+export const Tag = styled.label`
   font-size: 1.25rem;
   line-height: 1.25rem;
   color: ${(props) => props.theme.primary};
@@ -34,9 +50,10 @@ export const WhatWeOffer = styled.label`
   }
 `;
 
-export const ServicesTag = styled.h4`
+export const Title = styled.h4`
   font-size: 2.9rem;
-  margin-top: 1vh;
+  line-height: 2.9rem;
+  white-space: nowrap;
   color: ${(props) => props.theme.secondary};
   font-weight: 700;
   & span {
@@ -49,33 +66,4 @@ export const ServicesTag = styled.h4`
   @media screen and (max-width: 380px) {
     font-size: 2.5rem;
   }
-`;
-
-export const CardsContainer = styled.div`
-  flex: 0.95;
-  width: 100%;
-  margin-top: 4.5vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 1rem 0;
-`;
-
-export const SideIcon = styled.div`
-  position: absolute;
-  top: 30%;
-  left: 0;
-  width: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-  /* background-color: red; */
-`;
-
-export const Icon = styled.img`
-  width: 70% !important;
-  height: auto;
 `;

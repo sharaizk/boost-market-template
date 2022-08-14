@@ -23,11 +23,20 @@ import {
   petrosin,
   killerqueen,
   popinchuk,
-  lancerx2,
+  // lancerx2,
 } from "utils/assets.config";
-
+import Carousel from "react-elastic-carousel";
+import BoosterCard from "components/custom/BoosterCard";
 const BoosterSection = () => {
-  const boostes = [
+  const breakPoints = [
+    { width: 1, itemsToShow: 1.15 },
+    { width: 550, itemsToShow: 2.5 },
+    { width: 850, itemsToShow: 3.5 },
+    { width: 1150, itemsToShow: 4 },
+    { width: 1440, itemsToShow: 4.5 },
+    { width: 1750, itemsToShow: 4.75 },
+  ];
+  const boosters = [
     {
       id: 501,
       title: "LancerX",
@@ -77,7 +86,7 @@ const BoosterSection = () => {
       title: "LancerX",
       flags: [uk, germany, sweden],
       legends: [crypto, bloodhound, wraith, gibraltar, caustic],
-      avatar: lancerx2,
+      avatar: lancerx,
       isVip: false,
       isActive: false,
       rating: 5.0,
@@ -95,7 +104,29 @@ const BoosterSection = () => {
           <Button>See All Boosters</Button>
         </BtnContainer>
       </TopSection>
-      <BottomSection>S</BottomSection>
+      <BottomSection>
+        <Carousel
+          breakPoints={breakPoints}
+          renderArrow={() => <></>}
+          renderPagination={() => <></>}
+          itemPadding={[15, 20, 15, 0]}
+        >
+          {boosters?.map((booster) => {
+            return (
+              <BoosterCard
+                isActive={booster.isActive}
+                title={booster.title}
+                flags={booster.flags}
+                legends={booster.legends}
+                avatar={booster.avatar}
+                isVip={booster.isVip}
+                rating={booster.rating}
+                reviews={booster.reviews}
+              />
+            );
+          })}
+        </Carousel>
+      </BottomSection>
     </ScreenContainer>
   );
 };
