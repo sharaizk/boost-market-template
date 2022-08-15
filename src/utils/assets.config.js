@@ -49,6 +49,8 @@ import reviewlogo from "assets/reviewlogo.png";
 import serviceIcon from "assets/serviceIcon.svg";
 import paymentIcon from "assets/paymentIcon.svg";
 import rankupIcon from "assets/rankupIcon.svg";
+import arrowSVG from 'assets/arrow.svg'
+import checkout from 'assets/checkout.png'
 export {
   BoosterHoodie,
   UkFlag,
@@ -101,4 +103,6 @@ export {
   serviceIcon,
   paymentIcon,
   rankupIcon,
+  arrowSVG,
+  checkout
 };

@@ -17,8 +17,13 @@ export const Card = styled.div`
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 1.25rem 2rem;
+
+  @media screen and (max-width: 768px) {
+    display: ${(props) => (props.isActive ? "flex" : "none")};
+    flex: 1;
+  }
 `;
 
 export const SVG = styled.svg`
@@ -52,14 +57,14 @@ export const Img = styled.img`
 `;
 
 export const Title = styled.label`
-flex: 0.3;
-margin-bottom: 1.5vh;
+  flex: 0.3;
+  margin-bottom: 1.5vh;
   color: ${(props) =>
     props.isActive ? props.theme.white : props.theme.secondary};
 `;
 
 export const Description = styled.p`
-flex: 0.7;
+  flex: 0.7;
   color: ${(props) =>
     props.isActive ? props.theme.white : props.theme.secondary};
   font-size: 0.875rem;

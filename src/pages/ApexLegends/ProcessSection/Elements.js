@@ -8,10 +8,11 @@ export const ScreenContainer = styled.div`
   align-items: flex-start;
   flex-direction: column;
   position: relative;
-  height: 60vh;
+  height: 85vh;
+  max-height: 100%;
   margin-bottom: 10vh;
   @media screen and (max-width: 1440px) {
-    height: 70vh;
+    height: 95vh;
   }
   @media screen and (max-width: 1024px) {
     padding: 1rem 7vw;
@@ -72,12 +73,12 @@ export const Title = styled.h4`
   }
 `;
 
-export const BottomSection = styled.div`
-  flex: 0.8;
+export const MiddleSection = styled.div`
+  flex: 0.3;
   margin-top: 2vh;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
 `;
@@ -88,4 +89,133 @@ export const LevelContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+`;
+
+export const IconContainer = styled.div`
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width:768px) {
+    display: none;
+    
+  }
+`;
+
+export const Icon = styled.img`
+  width: 100%;
+`;
+
+export const BottomSection = styled.div`
+  flex: 0.575;
+  background-color: ${(props) => props.theme.tertiary};
+  width: 100%;
+  padding: 6% 10%;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    margin-top: 4vh;
+  }
+`;
+
+export const LeftSection = styled.div`
+  height: 100%;
+  flex: 0.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+`;
+
+export const RightSection = styled.div`
+  display: flex;
+  flex: 0.5;
+
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    margin-top: 4vh;
+  }
+`;
+
+export const Tag2 = styled.label`
+  font-size: 1.2rem;
+  line-height: 1.25rem;
+  color: ${(props) => props.theme.primary};
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+`;
+export const Title2 = styled.h4`
+  font-size: 1.9rem;
+  line-height: 1.9rem;
+  white-space: nowrap;
+  color: ${(props) => props.theme.secondary};
+  font-weight: 700;
+  & span {
+    color: ${(props) => props.theme.primary};
+  }
+
+  @media screen and (max-width: 1440px) {
+    font-size: 1.6rem;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 1.25rem;
+  }
+`;
+
+export const Detail = styled.p`
+  color: #6c7179;
+  font-size: 0.85em;
+  width: 40ch;
+  font-weight: 400;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+export const UnList = styled.ul`
+  /* margin-left: 2%; */
+  list-style: none;
+`;
+
+export const List = styled.li`
+  color: #6c7179;
+  font-size: 0.85em;
+
+  font-weight: 400;
+  ::before {
+    content: "•";
+    color: red;
+    display: inline-block;
+    width: 1em;
+    font-size: 1.3rem;
+  }
+`;
+
+export const Btn = styled.button`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 15%;
+  gap: 24px;
+  outline: none;
+  border: none;
+  left: 0px;
+  top: 338px;
+  margin-top: 2vh;
+  color: #fff;
+  background: linear-gradient(85.81deg, #d33b4b 6.43%, #f4495a 95.61%);
+  border-radius: 20px;
+`;
+
+export const Img = styled.img`
+  width: 100%;
+  height: auto;
 `;
