@@ -46,6 +46,9 @@ import germany from "assets/flags/Germany.svg";
 import sweden from "assets/flags/Sweden.svg";
 import qoute from "assets/qoutesvg.svg";
 import reviewlogo from "assets/reviewlogo.png";
+import serviceIcon from "assets/serviceIcon.svg";
+import paymentIcon from "assets/paymentIcon.svg";
+import rankupIcon from "assets/rankupIcon.svg";
 export {
   BoosterHoodie,
   UkFlag,
@@ -95,4 +98,7 @@ export {
   sweden,
   qoute,
   reviewlogo,
+  serviceIcon,
+  paymentIcon,
+  rankupIcon,
 };
