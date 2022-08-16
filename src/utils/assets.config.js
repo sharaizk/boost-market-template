@@ -52,6 +52,20 @@ import rankupIcon from "assets/rankupIcon.svg";
 import arrowSVG from "assets/arrow.svg";
 import checkout from "assets/checkout.png";
 import flame from "assets/flame.png";
+import logoInverted from 'assets/logoInverted.svg'
+import paypal from 'assets/paypal.svg'
+import stripe from 'assets/stripe.svg'
+import bitcoin from 'assets/bitcoin.svg'
+import eth from 'assets/eth.svg'
+import Lcoin from 'assets/Lcoin.svg'
+import paysafe from 'assets/paysafe.svg'
+import skrill from 'assets/skrill.svg'
+import ssl from 'assets/ssl.svg'
+
+
+
+
+
 export {
   BoosterHoodie,
   UkFlag,
@@ -107,4 +121,13 @@ export {
   arrowSVG,
   checkout,
   flame,
+  logoInverted,
+  paypal,
+  stripe,
+  bitcoin,
+  eth,
+  Lcoin,
+  paysafe,
+  skrill,
+  ssl
 };
