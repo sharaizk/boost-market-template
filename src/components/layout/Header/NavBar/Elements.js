@@ -79,6 +79,16 @@ export const NavSection = styled.div`
   }
 `;
 
+export const MobileIcon = styled.div`
+  display: none;
+  @media screen and (max-width: 870px) {
+    flex: 0.8;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+`;
+
 export const LinksContainer = styled.ul`
   height: 100%;
   flex: 0.55;
@@ -91,7 +101,6 @@ export const LinksContainer = styled.ul`
   @media screen and (max-width: 1024px) {
     flex: 0.5;
   }
-
 `;
 
 export const BtnContainer = styled.div`
@@ -118,7 +127,7 @@ export const StyledLink = styled(Link)`
   & svg {
     stroke-width: 3.5;
   }
-  @media screen and (max-width:1440px){
+  @media screen and (max-width: 1440px) {
     font-size: 0.8rem;
   }
   @media screen and (max-width: 1024px) {
@@ -168,7 +177,7 @@ export const IconWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width:1024px) {
+  @media screen and (max-width: 1024px) {
     margin-right: 0.8rem;
   }
 `;

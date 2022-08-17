@@ -32,7 +32,7 @@ const BoosterSection = () => {
     { width: 1, itemsToShow: 1.15 },
     { width: 550, itemsToShow: 2.5 },
     { width: 850, itemsToShow: 3.5 },
-    { width: 1150, itemsToShow: 4 },
+    { width: 1150, itemsToShow: 4.4 },
     { width: 1440, itemsToShow: 4.5 },
     { width: 1750, itemsToShow: 4.75 },
   ];
@@ -109,7 +109,7 @@ const BoosterSection = () => {
           breakPoints={breakPoints}
           renderArrow={() => <></>}
           renderPagination={() => <></>}
-          itemPadding={[15, 20, 15, 0]}
+          itemPadding={[15, 15, 15, 0]}
         >
           {boosters?.map((booster) => {
             return (

@@ -62,6 +62,10 @@ import paysafe from 'assets/paysafe.svg'
 import skrill from 'assets/skrill.svg'
 import ssl from 'assets/ssl.svg'
 import pathfinder from 'assets/pathfinder.png'
+import ninja from 'assets/ninja.svg'
+import shield from 'assets/shield.svg'
+import tracking from 'assets/tracking.svg'
+import potion from 'assets/potion.svg'
 
 export {
   BoosterHoodie,
@@ -127,6 +131,9 @@ export {
   paysafe,
   skrill,
   ssl,
-  pathfinder
-
+  pathfinder,
+  ninja,
+  shield,
+  tracking,
+  potion
 };

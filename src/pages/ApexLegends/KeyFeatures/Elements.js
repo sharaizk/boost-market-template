@@ -8,7 +8,7 @@ export const ScreenContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 55vh;
+  height: 45vh;
   margin-bottom: 20vh;
   @media screen and (max-width: 1440px) {
     height: 55vh;
@@ -39,7 +39,6 @@ export const FeaturesContainer = styled.div`
     flex-direction: column;
     padding: 10% 7%;
   }
-
 `;
 
 export const LeftSection = styled.div`
@@ -52,12 +51,24 @@ export const LeftSection = styled.div`
 `;
 
 export const RightSection = styled.div`
-  flex: 0.4;
+  flex: 0.36;
   display: flex;
   height: 100%;
   justify-content: flex-start;
   align-items: flex-start;
   position: relative;
+
+  @media screen and (max-width: 1440px) {
+    flex: 0.4;
+  }
+  @media screen and (max-width: 1300px) {
+    flex: 0.45;
+  }
+  @media screen and (max-width:768px){
+    flex-direction: column;
+    margin-top: 2vh;
+    width: 100%;
+  }
 `;
 export const WhatWeOffer = styled.label`
   font-size: 1.25rem;
@@ -102,4 +113,23 @@ export const TryBtn = styled.button`
   padding: 1rem 3rem;
   color: ${(props) => props.theme.white};
   font-weight: 600;
+`;
+
+export const FeatureCardContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 0.5;
+  position: absolute;
+  flex-direction: column;
+  top: ${(props) => props.top};
+  left: ${(props) => `${props.left}%` || "0%"};
+  @media screen and (max-width:768px){
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
 `;

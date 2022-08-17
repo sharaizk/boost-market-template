@@ -8,7 +8,9 @@ import {
   FeaturesTag,
   FeaturesDescription,
   TryBtn,
+  FeatureCardContainer,
 } from "./Elements";
+import { ninja, tracking, potion, shield } from "utils/assets.config";
 import FeatureCard from "components/custom/FeatureCard";
 const KeyFeatures = () => {
   return (
@@ -27,7 +29,32 @@ const KeyFeatures = () => {
           <TryBtn>Try Now!</TryBtn>
         </LeftSection>
         <RightSection>
-          <FeatureCard />
+          <FeatureCardContainer left={"-10"} top={"-50%"}>
+            <FeatureCard
+              title="Appear Offline"
+              description={
+                "The booster plays offline, so the process is undetectable from your friend list"
+              }
+              icon={ninja}
+            />
+            <FeatureCard
+              title={"Order Tracking"}
+              description="Spectate, chat with the booster, and follow your match history in the client's area."
+              icon={tracking}
+            />
+          </FeatureCardContainer>
+          <FeatureCardContainer left={"55"} top={"-40%"}>
+            <FeatureCard
+              title="Secured Data"
+              description="Your account remains safe with our automated VPN system."
+              icon={shield}
+            />
+            <FeatureCard
+              title="Premium Support"
+              description="Use our live support to receive premium help whenever you are in need."
+              icon={potion}
+            />
+          </FeatureCardContainer>
         </RightSection>
       </FeaturesContainer>
     </ScreenContainer>

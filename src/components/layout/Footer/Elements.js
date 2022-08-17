@@ -60,7 +60,7 @@ export const BannerContainer = styled.div`
   }
   @media screen and (max-width: 480px) {
     border-radius: 25px;
-    height: 20%;
+    height: 15%;
   }
 `;
 
@@ -68,7 +68,7 @@ export const CTATitle = styled.label`
   font-style: normal;
   font-weight: 300;
   margin-bottom: 1.2rem;
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 30px;
   text-align: center;
   letter-spacing: 0.02em;

@@ -11,6 +11,7 @@ import {
   BorderedLink,
   CoinImage,
   IconWrapper,
+  MobileIcon,
 } from "./Elements";
 import { brandLogo } from "utils/assets.config";
 import { useTheme } from "styled-components";
@@ -20,7 +21,8 @@ import { VscBell } from "react-icons/vsc";
 import { coin, avatar } from "utils/assets.config";
 import Avatar from "components/custom/Avatar";
 import Badge from "components/custom/Badge";
-const NavBar = () => {
+import { Spin as Hamburger } from "hamburger-react";
+const NavBar = ({ toggle, isOpen }) => {
   const theme = useTheme();
   return (
     <NavBarContainer>
@@ -32,6 +34,9 @@ const NavBar = () => {
           <p>MARKET</p>
         </BrandTitle>
       </Brand>
+      <MobileIcon>
+        <Hamburger toggle={toggle} toggled={isOpen} size={24} color={theme.secondary}/>
+      </MobileIcon>
       <NavSection>
         <LinksContainer>
           <StyledLink to="/" $color={theme.secondary}>

@@ -7,7 +7,7 @@ export const ScreenContainer = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
-  height: 85vh;
+  height: 70vh;
   min-height: 110vh;
   max-height: 100%;
   margin-bottom: 10vh;
