@@ -32,6 +32,7 @@ export const TopSection = styled.div`
   }
   @media screen and (max-width: 480px) {
     flex-direction: column;
+    align-items: flex-end;
   }
 `;
 

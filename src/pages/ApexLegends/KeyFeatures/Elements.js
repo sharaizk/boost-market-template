@@ -54,8 +54,10 @@ export const LeftSection = styled.div`
 export const RightSection = styled.div`
   flex: 0.4;
   display: flex;
+  height: 100%;
   justify-content: flex-start;
   align-items: flex-start;
+  position: relative;
 `;
 export const WhatWeOffer = styled.label`
   font-size: 1.25rem;

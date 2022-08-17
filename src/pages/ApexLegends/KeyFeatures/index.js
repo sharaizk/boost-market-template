@@ -9,6 +9,7 @@ import {
   FeaturesDescription,
   TryBtn,
 } from "./Elements";
+import FeatureCard from "components/custom/FeatureCard";
 const KeyFeatures = () => {
   return (
     <ScreenContainer>
@@ -25,7 +26,9 @@ const KeyFeatures = () => {
           </FeaturesDescription>
           <TryBtn>Try Now!</TryBtn>
         </LeftSection>
-        <RightSection>s</RightSection>
+        <RightSection>
+          <FeatureCard />
+        </RightSection>
       </FeaturesContainer>
     </ScreenContainer>
   );

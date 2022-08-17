@@ -61,10 +61,7 @@ import Lcoin from 'assets/Lcoin.svg'
 import paysafe from 'assets/paysafe.svg'
 import skrill from 'assets/skrill.svg'
 import ssl from 'assets/ssl.svg'
-
-
-
-
+import pathfinder from 'assets/pathfinder.png'
 
 export {
   BoosterHoodie,
@@ -129,5 +126,7 @@ export {
   Lcoin,
   paysafe,
   skrill,
-  ssl
+  ssl,
+  pathfinder
+
 };

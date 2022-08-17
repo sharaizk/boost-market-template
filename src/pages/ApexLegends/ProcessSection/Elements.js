@@ -111,7 +111,7 @@ export const BottomSection = styled.div`
   flex: 0.575;
   background-color: ${(props) => props.theme.tertiary};
   width: 100%;
-  padding: 6% 10%;
+  padding: 6% 8%;
   border-radius: 40px;
   display: flex;
   justify-content: space-between;
@@ -125,7 +125,7 @@ export const BottomSection = styled.div`
 
 export const LeftSection = styled.div`
   height: 100%;
-  flex: 0.5;
+  flex: 0.6;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -134,7 +134,8 @@ export const LeftSection = styled.div`
 
 export const RightSection = styled.div`
   display: flex;
-  flex: 0.5;
+  height: 100%;
+  flex: 0.4;
 
   justify-content: center;
   align-items: center;
@@ -216,6 +217,6 @@ export const Btn = styled.button`
 `;
 
 export const Img = styled.img`
-  width: 100%;
+  width: 115%;
   height: auto;
 `;

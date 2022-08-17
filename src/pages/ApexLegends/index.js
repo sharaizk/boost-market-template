@@ -6,6 +6,7 @@ import KeyFeatures from "./KeyFeatures";
 import BoosterSection from "./BoosterSection";
 import ClientSection from "./ClientSection";
 import ProcessSection from "./ProcessSection";
+import FAQSection from "./FAQSections";
 const ApexLegends = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const ApexLegends = () => {
       <BoosterSection />
       <ClientSection />
       <ProcessSection />
+      <FAQSection />
     </>
   );
 };
