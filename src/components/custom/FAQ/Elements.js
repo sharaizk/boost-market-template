@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const AccordianContainer = styled.div`
   height: 100%;
   width: 100%;
-  padding: 1.25rem 1.3rem;
+  padding: 2rem 1.8rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -14,6 +14,9 @@ export const AccordianContainer = styled.div`
   cursor: pointer;
   background-color: ${(props) =>
     props.isActive ? props.theme.secondary : props.theme.tertiary};
+  @media screen and (max-width: 1440px) {
+    padding: 1.25rem 1.3rem;
+  }
 `;
 
 export const AccordianTitle = styled.div`
@@ -38,6 +41,9 @@ export const AccordianContent = styled.div`
   align-items: flex-start;
   color: #bdc4cd;
   margin-top: 1.75vh;
-  font-size: 0.65rem;
+  font-size: 0.9rem;
   line-height: 1.5rem;
+  @media screen and (max-width: 1440px) {
+    font-size: 0.65rem;
+  }
 `;

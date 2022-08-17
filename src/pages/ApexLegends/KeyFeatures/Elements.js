@@ -8,10 +8,11 @@ export const ScreenContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 45vh;
-  margin-bottom: 20vh;
+  height: 50vh;
+  margin-bottom: 30vh;
   @media screen and (max-width: 1440px) {
     height: 55vh;
+    margin-bottom: 20vh;
   }
   @media screen and (max-width: 1400px) {
     height: 50vh;

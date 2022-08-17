@@ -8,7 +8,7 @@ export const ScreenContainer = styled.div`
   align-items: flex-start;
   flex-direction: column;
   position: relative;
-  height: 85vh;
+  height: 90vh;
   max-height: 100%;
   margin-bottom: 10vh;
   @media screen and (max-width: 1440px) {
@@ -97,9 +97,8 @@ export const IconContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     display: none;
-    
   }
 `;
 
@@ -153,7 +152,7 @@ export const Tag2 = styled.label`
   text-transform: uppercase;
 `;
 export const Title2 = styled.h4`
-  font-size: 1.9rem;
+  font-size: 2.25rem;
   line-height: 1.9rem;
   white-space: nowrap;
   color: ${(props) => props.theme.secondary};
@@ -172,9 +171,12 @@ export const Title2 = styled.h4`
 
 export const Detail = styled.p`
   color: #6c7179;
-  font-size: 0.85em;
+  font-size: 1.2rem;
   width: 40ch;
   font-weight: 400;
+  @media screen and (max-width: 1440px) {
+    font-size: 0.85rem;
+  }
   @media screen and (max-width: 768px) {
     width: 100%;
   }
@@ -187,7 +189,7 @@ export const UnList = styled.ul`
 
 export const List = styled.li`
   color: #6c7179;
-  font-size: 0.85em;
+  font-size: 1.2em;
 
   font-weight: 400;
   ::before {
@@ -197,6 +199,9 @@ export const List = styled.li`
     width: 1em;
     font-size: 1.3rem;
   }
+  @media screen and (max-width: 1440px) {
+    font-size: 0.85em;
+  }
 `;
 
 export const Btn = styled.button`
@@ -204,16 +209,22 @@ export const Btn = styled.button`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 4% 15%;
+  padding: 3.5% 12%;
   gap: 24px;
   outline: none;
+  cursor: pointer;
   border: none;
   left: 0px;
+
   top: 338px;
   margin-top: 2vh;
+  font-size: 1.2rem;
   color: #fff;
   background: linear-gradient(85.81deg, #d33b4b 6.43%, #f4495a 95.61%);
   border-radius: 20px;
+  @media screen and (max-width: 1440px) {
+    padding: 4% 15%;
+  }
 `;
 
 export const Img = styled.img`

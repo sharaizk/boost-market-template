@@ -266,39 +266,53 @@ export const GameLogo = styled.img`
 
 export const LinkTitle = styled.h6`
   color: ${(props) => props.theme.primary};
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-bottom: 2vh;
+  @media screen and (max-width: 1440px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const Link = styled.label`
   color: #bdc4cd;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+
   margin-bottom: 0.75vh;
   opacity: 75%;
+  @media screen and (max-width: 1440px) {
+    font-size: 0.7rem;
+  }
 `;
 
 export const Disclaimer = styled.div`
-  font-size: 0.7rem;
+  font-size: 0.825rem;
   color: #bdc4cd;
   opacity: 75%;
   border: 1px solid #2d2e33;
   border-radius: 24px;
 
-  padding: 1rem;
+  padding: 1.5rem;
+  @media screen and (max-width: 1440px) {
+    font-size: 0.7rem;
+    padding: 1rem;
+  }
 `;
 
 export const Copyright = styled.p`
   font-style: normal;
   font-weight: 400;
-  font-size: 0.7rem;
+  font-size: 0.825rem;
   line-height: 20px;
   text-align: right;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #bdc4cd;
   margin-bottom: 2vh;
+  @media screen and (max-width: 1440px) {
+    font-size: 0.7rem;
+  }
   @media screen and (max-width: 768px) {
-  margin-bottom: 0;
+    margin-bottom: 0;
 
     margin-top: 2vh;
   }
